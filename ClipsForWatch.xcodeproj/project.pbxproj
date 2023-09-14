@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B5887D1269C292D00349373 /* ClipsForWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1B5887D0269C292D00349373 /* ClipsForWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1B5887E0269C292E00349373 /* ClipsForWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1B5887DF269C292E00349373 /* ClipsForWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1B5887F6269C292F00349373 /* ClipsForWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5887F5269C292F00349373 /* ClipsForWatchTests.swift */; };
+		1B588801269C292F00349373 /* ClipsForWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B588800269C292F00349373 /* ClipsForWatchUITests.swift */; };
+		1B588819269C296E00349373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B588816269C296E00349373 /* Assets.xcassets */; };
+		1B58881B269C296E00349373 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B588818269C296E00349373 /* Interface.storyboard */; };
+		1B588822269C2A2300349373 /* ClipsforWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B58881D269C2A2300349373 /* ClipsforWatchController.swift */; };
+		1B588823269C2A2300349373 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B58881E269C2A2300349373 /* Channel.swift */; };
+		1B588824269C2A2300349373 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B58881F269C2A2300349373 /* ExtensionDelegate.swift */; };
+		1B588825269C2A2300349373 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B588820269C2A2300349373 /* Clip.swift */; };
+		1B588829269C2A2800349373 /* VideoRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B588826269C2A2800349373 /* VideoRowController.swift */; };
+		1B58882B269C2A2800349373 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B588828269C2A2800349373 /* VideoController.swift */; };
+		1BC24B16269C2E00006C5F0C /* SearchRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC24B14269C2E00006C5F0C /* SearchRowController.swift */; };
+		1BC24B17269C2E00006C5F0C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC24B15269C2E00006C5F0C /* SearchController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B5887D2269C292D00349373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5887C6269C292D00349373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B5887CF269C292D00349373;
+			remoteInfo = "ClipsForWatch WatchKit App";
+		};
+		1B5887E1269C292E00349373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5887C6269C292D00349373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B5887DE269C292E00349373;
+			remoteInfo = "ClipsForWatch WatchKit Extension";
+		};
+		1B5887F2269C292F00349373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5887C6269C292D00349373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B5887DE269C292E00349373;
+			remoteInfo = "ClipsForWatch WatchKit Extension";
+		};
+		1B5887FD269C292F00349373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5887C6269C292D00349373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B5887CF269C292D00349373;
+			remoteInfo = "ClipsForWatch WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B588808269C292F00349373 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1B5887E0269C292E00349373 /* ClipsForWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B58880C269C292F00349373 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1B5887D1269C292D00349373 /* ClipsForWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B0911D2269E79EF00E9F2AA /* ClipsForWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ClipsForWatch-Info.plist"; sourceTree = "<group>"; };
+		1B5887CC269C292D00349373 /* ClipsForWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipsForWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5887D0269C292D00349373 /* ClipsForWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ClipsForWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5887DA269C292E00349373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5887DF269C292E00349373 /* ClipsForWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ClipsForWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5887EC269C292F00349373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5887F1269C292F00349373 /* ClipsForWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipsForWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5887F5269C292F00349373 /* ClipsForWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsForWatchTests.swift; sourceTree = "<group>"; };
+		1B5887F7269C292F00349373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5887FC269C292F00349373 /* ClipsForWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipsForWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B588800269C292F00349373 /* ClipsForWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsForWatchUITests.swift; sourceTree = "<group>"; };
+		1B588802269C292F00349373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B588816269C296E00349373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B588818269C296E00349373 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		1B58881D269C2A2300349373 /* ClipsforWatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipsforWatchController.swift; sourceTree = "<group>"; };
+		1B58881E269C2A2300349373 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		1B58881F269C2A2300349373 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1B588820269C2A2300349373 /* Clip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
+		1B588826269C2A2800349373 /* VideoRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRowController.swift; sourceTree = "<group>"; };
+		1B588828269C2A2800349373 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		1BC24B14269C2E00006C5F0C /* SearchRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRowController.swift; sourceTree = "<group>"; };
+		1BC24B15269C2E00006C5F0C /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B5887DC269C292E00349373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887EE269C292F00349373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887F9269C292F00349373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B5887C5269C292D00349373 = {
+			isa = PBXGroup;
+			children = (
+				1B0911D2269E79EF00E9F2AA /* ClipsForWatch-Info.plist */,
+				1B5887D4269C292D00349373 /* ClipsForWatch WatchKit App */,
+				1B5887E3269C292E00349373 /* ClipsForWatch WatchKit Extension */,
+				1B5887F4269C292F00349373 /* ClipsForWatchTests */,
+				1B5887FF269C292F00349373 /* ClipsForWatchUITests */,
+				1B5887CD269C292D00349373 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B5887CD269C292D00349373 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B5887CC269C292D00349373 /* ClipsForWatch.app */,
+				1B5887D0269C292D00349373 /* ClipsForWatch WatchKit App.app */,
+				1B5887DF269C292E00349373 /* ClipsForWatch WatchKit Extension.appex */,
+				1B5887F1269C292F00349373 /* ClipsForWatchTests.xctest */,
+				1B5887FC269C292F00349373 /* ClipsForWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B5887D4269C292D00349373 /* ClipsForWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1B588816269C296E00349373 /* Assets.xcassets */,
+				1B588818269C296E00349373 /* Interface.storyboard */,
+				1B5887DA269C292E00349373 /* Info.plist */,
+			);
+			path = "ClipsForWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		1B5887E3269C292E00349373 /* ClipsForWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B58881E269C2A2300349373 /* Channel.swift */,
+				1B588820269C2A2300349373 /* Clip.swift */,
+				1BC24B15269C2E00006C5F0C /* SearchController.swift */,
+				1BC24B14269C2E00006C5F0C /* SearchRowController.swift */,
+				1B58881D269C2A2300349373 /* ClipsforWatchController.swift */,
+				1B58881F269C2A2300349373 /* ExtensionDelegate.swift */,
+				1B588828269C2A2800349373 /* VideoController.swift */,
+				1B588826269C2A2800349373 /* VideoRowController.swift */,
+				1B5887EC269C292F00349373 /* Info.plist */,
+			);
+			path = "ClipsForWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1B5887F4269C292F00349373 /* ClipsForWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B5887F5269C292F00349373 /* ClipsForWatchTests.swift */,
+				1B5887F7269C292F00349373 /* Info.plist */,
+			);
+			path = ClipsForWatchTests;
+			sourceTree = "<group>";
+		};
+		1B5887FF269C292F00349373 /* ClipsForWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B588800269C292F00349373 /* ClipsForWatchUITests.swift */,
+				1B588802269C292F00349373 /* Info.plist */,
+			);
+			path = ClipsForWatchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B5887CB269C292D00349373 /* ClipsForWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B58880D269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatch" */;
+			buildPhases = (
+				1B5887CA269C292D00349373 /* Resources */,
+				1B58880C269C292F00349373 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B5887D3269C292D00349373 /* PBXTargetDependency */,
+			);
+			name = ClipsForWatch;
+			productName = ClipsForWatch;
+			productReference = 1B5887CC269C292D00349373 /* ClipsForWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		1B5887CF269C292D00349373 /* ClipsForWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B588809269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatch WatchKit App" */;
+			buildPhases = (
+				1B5887CE269C292D00349373 /* Resources */,
+				1B588808269C292F00349373 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B5887E2269C292E00349373 /* PBXTargetDependency */,
+			);
+			name = "ClipsForWatch WatchKit App";
+			productName = "ClipsForWatch WatchKit App";
+			productReference = 1B5887D0269C292D00349373 /* ClipsForWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1B5887DE269C292E00349373 /* ClipsForWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B588805269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatch WatchKit Extension" */;
+			buildPhases = (
+				1B5887DB269C292E00349373 /* Sources */,
+				1B5887DC269C292E00349373 /* Frameworks */,
+				1B5887DD269C292E00349373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClipsForWatch WatchKit Extension";
+			productName = "ClipsForWatch WatchKit Extension";
+			productReference = 1B5887DF269C292E00349373 /* ClipsForWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		1B5887F0269C292F00349373 /* ClipsForWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B588810269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatchTests" */;
+			buildPhases = (
+				1B5887ED269C292F00349373 /* Sources */,
+				1B5887EE269C292F00349373 /* Frameworks */,
+				1B5887EF269C292F00349373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B5887F3269C292F00349373 /* PBXTargetDependency */,
+			);
+			name = ClipsForWatchTests;
+			productName = ClipsForWatchTests;
+			productReference = 1B5887F1269C292F00349373 /* ClipsForWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B5887FB269C292F00349373 /* ClipsForWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B588813269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatchUITests" */;
+			buildPhases = (
+				1B5887F8269C292F00349373 /* Sources */,
+				1B5887F9269C292F00349373 /* Frameworks */,
+				1B5887FA269C292F00349373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B5887FE269C292F00349373 /* PBXTargetDependency */,
+			);
+			name = ClipsForWatchUITests;
+			productName = ClipsForWatchUITests;
+			productReference = 1B5887FC269C292F00349373 /* ClipsForWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B5887C6269C292D00349373 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1B5887CB269C292D00349373 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1B5887CF269C292D00349373 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1B5887DE269C292E00349373 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					1B5887F0269C292F00349373 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1B5887DE269C292E00349373;
+					};
+					1B5887FB269C292F00349373 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1B5887CF269C292D00349373;
+					};
+				};
+			};
+			buildConfigurationList = 1B5887C9269C292D00349373 /* Build configuration list for PBXProject "ClipsForWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B5887C5269C292D00349373;
+			productRefGroup = 1B5887CD269C292D00349373 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B5887CB269C292D00349373 /* ClipsForWatch */,
+				1B5887CF269C292D00349373 /* ClipsForWatch WatchKit App */,
+				1B5887DE269C292E00349373 /* ClipsForWatch WatchKit Extension */,
+				1B5887F0269C292F00349373 /* ClipsForWatchTests */,
+				1B5887FB269C292F00349373 /* ClipsForWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B5887CA269C292D00349373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887CE269C292D00349373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B588819269C296E00349373 /* Assets.xcassets in Resources */,
+				1B58881B269C296E00349373 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887DD269C292E00349373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887EF269C292F00349373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887FA269C292F00349373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B5887DB269C292E00349373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B588823269C2A2300349373 /* Channel.swift in Sources */,
+				1B588825269C2A2300349373 /* Clip.swift in Sources */,
+				1B58882B269C2A2800349373 /* VideoController.swift in Sources */,
+				1B588824269C2A2300349373 /* ExtensionDelegate.swift in Sources */,
+				1B588829269C2A2800349373 /* VideoRowController.swift in Sources */,
+				1BC24B16269C2E00006C5F0C /* SearchRowController.swift in Sources */,
+				1BC24B17269C2E00006C5F0C /* SearchController.swift in Sources */,
+				1B588822269C2A2300349373 /* ClipsforWatchController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887ED269C292F00349373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5887F6269C292F00349373 /* ClipsForWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5887F8269C292F00349373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B588801269C292F00349373 /* ClipsForWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B5887D3269C292D00349373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B5887CF269C292D00349373 /* ClipsForWatch WatchKit App */;
+			targetProxy = 1B5887D2269C292D00349373 /* PBXContainerItemProxy */;
+		};
+		1B5887E2269C292E00349373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B5887DE269C292E00349373 /* ClipsForWatch WatchKit Extension */;
+			targetProxy = 1B5887E1269C292E00349373 /* PBXContainerItemProxy */;
+		};
+		1B5887F3269C292F00349373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B5887DE269C292E00349373 /* ClipsForWatch WatchKit Extension */;
+			targetProxy = 1B5887F2269C292F00349373 /* PBXContainerItemProxy */;
+		};
+		1B5887FE269C292F00349373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B5887CF269C292D00349373 /* ClipsForWatch WatchKit App */;
+			targetProxy = 1B5887FD269C292F00349373 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B588803269C292F00349373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B588804269C292F00349373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B588806269C292F00349373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				INFOPLIST_FILE = "ClipsForWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		1B588807269C292F00349373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				INFOPLIST_FILE = "ClipsForWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		1B58880A269C292F00349373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				IBSC_MODULE = ClipsForWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "ClipsForWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		1B58880B269C292F00349373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				IBSC_MODULE = ClipsForWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "ClipsForWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		1B58880E269C292F00349373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "ClipsForWatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Clips;
+				INFOPLIST_KEY_CFBundleExecutable = ClipsForWatch;
+				INFOPLIST_KEY_CFBundleName = ClipsForWatch;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1B58880F269C292F00349373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "ClipsForWatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Clips;
+				INFOPLIST_KEY_CFBundleExecutable = ClipsForWatch;
+				INFOPLIST_KEY_CFBundleName = ClipsForWatch;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1B588811269C292F00349373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				INFOPLIST_FILE = ClipsForWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipsForWatch WatchKit Extension.appex/ClipsForWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		1B588812269C292F00349373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				INFOPLIST_FILE = ClipsForWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipsForWatch WatchKit Extension.appex/ClipsForWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		1B588814269C292F00349373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				INFOPLIST_FILE = ClipsForWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ClipsForWatch WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		1B588815269C292F00349373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72UM5XF97Y;
+				INFOPLIST_FILE = ClipsForWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reuben.ClipsForWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ClipsForWatch WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B5887C9269C292D00349373 /* Build configuration list for PBXProject "ClipsForWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B588803269C292F00349373 /* Debug */,
+				1B588804269C292F00349373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B588805269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B588806269C292F00349373 /* Debug */,
+				1B588807269C292F00349373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B588809269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B58880A269C292F00349373 /* Debug */,
+				1B58880B269C292F00349373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B58880D269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B58880E269C292F00349373 /* Debug */,
+				1B58880F269C292F00349373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B588810269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B588811269C292F00349373 /* Debug */,
+				1B588812269C292F00349373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B588813269C292F00349373 /* Build configuration list for PBXNativeTarget "ClipsForWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B588814269C292F00349373 /* Debug */,
+				1B588815269C292F00349373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B5887C6269C292D00349373 /* Project object */;
+}

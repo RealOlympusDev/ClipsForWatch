@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19115.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gWW-Ls-lqt">
+    <device id="watch44"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19026"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ClipsForWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Ghc-2Y-hJB">
+            <objects>
+                <controller identifier="Search" title="Search" id="CdH-Ju-WDO" customClass="SearchController" customModule="ClipsForWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="hKZ-Fu-Qs8">
+                            <items>
+                                <tableRow identifier="SearchRow" id="HWp-WV-yUO" customClass="SearchRowController" customModule="ClipsForWatch_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" spacing="10" id="Mgj-15-06I">
+                                        <items>
+                                            <group alignment="left" verticalAlignment="center" radius="15" id="s3D-Nh-cZe">
+                                                <items>
+                                                    <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="gray" id="SE1-kE-yVI"/>
+                                                </items>
+                                            </group>
+                                            <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="BotezLive" id="URh-BZ-6n7"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="channelName" destination="URh-BZ-6n7" id="Mi4-Ir-uhH"/>
+                                        <outlet property="profilePic" destination="SE1-kE-yVI" id="pjc-sx-g8S"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="No results found." textAlignment="center" id="oPV-V0-VSl"/>
+                    </items>
+                    <connections>
+                        <outlet property="noResults" destination="oPV-V0-VSl" id="R0D-aU-SXd"/>
+                        <outlet property="searchTable" destination="hKZ-Fu-Qs8" id="9v1-Ln-j7V"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-693" y="143"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="ClipsForWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Channel-->
+        <scene sceneID="EtH-F9-BHv">
+            <objects>
+                <controller identifier="YT" title="Channel" id="3xN-Q4-TtK" customClass="VideoController" customModule="ClipsForWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" hidden="YES" radius="6" id="R2V-vY-rWn">
+                            <items>
+                                <button alignment="left" id="Uy0-hG-VYk">
+                                    <group key="contentGroup" width="1" height="30" alignment="left" radius="6" id="tsU-Jm-V0Y">
+                                        <items>
+                                            <imageView alignment="center" verticalAlignment="center" image="magnifyingglass" catalog="system" id="vg1-T2-A68">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label alignment="center" verticalAlignment="center" text="Search" id="7Xz-Vb-VAJ"/>
+                                        </items>
+                                        <color key="backgroundColor" systemColor="darkTextColor"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="search" destination="3xN-Q4-TtK" id="yhJ-NJ-4zi"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <edgeInsets key="margins" left="1" right="1" top="1" bottom="1"/>
+                        </group>
+                        <button alignment="left" id="DV3-On-SRf">
+                            <group key="contentGroup" width="1" alignment="left" spacing="6" id="grs-6T-wmy">
+                                <items>
+                                    <imageView alignment="center" verticalAlignment="center" id="S7B-DA-IKf">
+                                        <imageReference key="image" image="star.fill" catalog="system"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label alignment="center" verticalAlignment="center" text="Favorite" id="Vxu-Sw-k7r"/>
+                                </items>
+                                <color key="backgroundColor" red="0.46710455420000002" green="0.17287692430000001" blue="0.9087719917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="10" right="10" top="10" bottom="10"/>
+                            </group>
+                            <connections>
+                                <action selector="tapFavourite" destination="3xN-Q4-TtK" id="cVY-pa-sjB"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="epb-Zu-oJZ">
+                            <items>
+                                <tableRow identifier="VideoRow" id="csX-Gh-p8m" customClass="VideoRowController" customModule="ClipsForWatch_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="sMr-lD-JgA">
+                                        <items>
+                                            <group width="1" alignment="left" layout="overlap" id="KhH-jg-XJL">
+                                                <items>
+                                                    <group width="1" alignment="left" radius="6" id="7NG-UJ-ymg">
+                                                        <items>
+                                                            <imageView width="1" height="100" alignment="center" image="gray" contentMode="scaleAspectFill" id="bNo-uR-0UT">
+                                                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" alignment="right" verticalAlignment="bottom" id="c1a-yK-3WB">
+                                                        <items>
+                                                            <group alignment="right" verticalAlignment="bottom" radius="6" id="ibb-MK-m35">
+                                                                <items>
+                                                                    <label alignment="center" verticalAlignment="center" text="0:00" id="E56-R3-Fpg"/>
+                                                                </items>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.74559859154929575" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                                                            </group>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="3" top="0.0" bottom="3"/>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <group alignment="left" layout="vertical" spacing="4" id="Mct-ID-sUL">
+                                                <items>
+                                                    <label alignment="left" text="CLICKBAIT TITLE" numberOfLines="0" id="Y6L-k4-XZd">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                    <group alignment="left" layout="vertical" spacing="0.0" id="NJU-Jr-V1X">
+                                                        <items>
+                                                            <label alignment="left" text="Channel" id="vDQ-XW-SX8">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                            </label>
+                                                            <label alignment="left" text="100K views" id="Zml-nc-Lbq">
+                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="5"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="10"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="channelName" destination="vDQ-XW-SX8" id="a5v-eg-ijF"/>
+                                        <outlet property="duration" destination="E56-R3-Fpg" id="qJh-p4-qq0"/>
+                                        <outlet property="thumbnail" destination="bNo-uR-0UT" id="ZGi-Cl-ig9"/>
+                                        <outlet property="videoTitle" destination="Y6L-k4-XZd" id="lTy-c7-lWW"/>
+                                        <outlet property="views" destination="Zml-nc-Lbq" id="WPI-pG-JKQ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </table>
+                        <imageView alignment="center" verticalAlignment="center" id="etl-wk-odY">
+                            <imageReference key="image" image="ai"/>
+                        </imageView>
+                        <label alignment="center" verticalAlignment="center" text="No clips found." textAlignment="center" id="uci-58-YJM"/>
+                    </items>
+                    <connections>
+                        <outlet property="ai" destination="etl-wk-odY" id="JmK-Sy-im4"/>
+                        <outlet property="favouriteIcon" destination="S7B-DA-IKf" id="LMX-bd-9bK"/>
+                        <outlet property="favouriteText" destination="Vxu-Sw-k7r" id="J7h-Jp-AsP"/>
+                        <outlet property="noClips" destination="uci-58-YJM" id="9Db-Ne-ooI"/>
+                        <outlet property="searchGroup" destination="R2V-vY-rWn" id="XnK-52-50R"/>
+                        <outlet property="table" destination="epb-Zu-oJZ" id="aLO-lb-7JN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-186" y="103.5"/>
+        </scene>
+        <!--ClipsforWatch-->
+        <scene sceneID="U9M-fJ-bkk">
+            <objects>
+                <controller title="ClipsforWatch" id="gWW-Ls-lqt" customClass="ClipsforWatchController" customModule="ClipsForWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" spacing="20" id="tqr-aI-mdf">
+                            <items>
+                                <label alignment="center" text="Clips" id="P1M-Fa-ZkD">
+                                    <fontDescription key="font" type="boldSystem" pointSize="24"/>
+                                </label>
+                                <group width="1" alignment="left" verticalAlignment="center" id="nM6-fp-UzV">
+                                    <items>
+                                        <button alignment="left" id="4M2-NJ-4cQ">
+                                            <group key="contentGroup" width="0.5" alignment="left" layout="vertical" id="32F-cy-Bhz">
+                                                <items>
+                                                    <group width="1" alignment="left" layout="overlap" id="wid-qo-s4I">
+                                                        <items>
+                                                            <group width="20" height="23" alignment="center" radius="0.0" id="ypt-nc-VfA">
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </group>
+                                                            <group width="1" alignment="left" id="FQa-1D-RqI">
+                                                                <items>
+                                                                    <imageView width="40" height="40" alignment="center" id="n4g-oQ-6He">
+                                                                        <imageReference key="image" image="magnifyingglass.circle.fill" catalog="system"/>
+                                                                        <color key="tintColor" red="0.46710455420000002" green="0.17287692430000001" blue="0.9087719917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </imageView>
+                                                                </items>
+                                                            </group>
+                                                        </items>
+                                                    </group>
+                                                    <label alignment="center" text="Search" id="R8P-28-X7i">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <action selector="tapSearch" destination="gWW-Ls-lqt" id="2ki-yZ-h5f"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="right" id="XJf-pZ-dkX">
+                                            <group key="contentGroup" width="0.5" alignment="left" layout="vertical" id="5qF-Qp-bZ3">
+                                                <items>
+                                                    <group width="1" alignment="left" layout="overlap" id="koh-Vi-hv7">
+                                                        <items>
+                                                            <group width="20" height="23" alignment="center" radius="0.0" id="yIr-Ui-ElP">
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </group>
+                                                            <imageView width="40" height="40" alignment="center" id="KP4-kk-DDv">
+                                                                <imageReference key="image" image="star.circle.fill" catalog="system"/>
+                                                                <color key="tintColor" red="0.46710455420000002" green="0.17287692430000001" blue="0.9087719917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </imageView>
+                                                        </items>
+                                                    </group>
+                                                    <label alignment="center" verticalAlignment="bottom" text="Favorites" id="qzu-Oa-LQ6">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <action selector="tapFavourites" destination="gWW-Ls-lqt" id="gPc-ER-yJP"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-439.78260869565213" y="152.54464285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ai" width="16" height="16"/>
+        <image name="gray" width="150" height="100"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="114"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star.fill" catalog="system" width="128" height="115"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
